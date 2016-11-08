@@ -38,7 +38,7 @@ public class MainActivity extends AppCompatActivity {
             URL url;
             HttpURLConnection urlConnection = null;
             try {
-                url = new URL("http://192.168.2.60/tuts_rest/signup.php?name=" + params[0] + "&email=" + params[1] + "&pwd=" + params[2]);
+                url = new URL("http://192.168.2.60/concursotapas2/server/signup.php?name=" + params[0] + "&email=" + params[1] + "&pwd=" + params[2]);
                 urlConnection = (HttpURLConnection) url.openConnection();
                 InputStream in = urlConnection.getInputStream();
                 InputStreamReader isw = new InputStreamReader(in);
@@ -59,7 +59,6 @@ public class MainActivity extends AppCompatActivity {
 
             return null;
         }
-
     }
 
     Button myButton;
